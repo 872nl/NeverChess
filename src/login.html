@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NeverChess</title><link rel="stylesheet" href="login.css"></head>
+<body><main class="shell">
+  <div class="top"><span class="mark">♞</span><span class="brand">NEVER<span>CHESS</span></span><small>BY BUTIZADA</small></div>
+  <div class="eyebrow">ACCESS CONTROL · KEYAUTH</div>
+  <h1>Welcome back.</h1><p class="sub">Sign in to continue to NeverChess.</p>
+  <div class="tabs"><button class="tab active" data-mode="credentials">ACCOUNT</button><button class="tab" data-mode="license">LICENSE KEY</button></div>
+  <form id="credentials" class="form">
+    <label>USERNAME<input name="username" autocomplete="username" placeholder="Your username" required></label>
+    <label>PASSWORD<input name="password" type="password" autocomplete="current-password" placeholder="Your password" required></label>
+    <button class="submit" type="submit">LOG IN <span>→</span></button>
+  </form>
+  <form id="license" class="form hidden">
+    <label>LICENSE KEY<input name="license" autocomplete="off" placeholder="XXXX-XXXX-XXXX-XXXX" required></label>
+    <button class="submit" type="submit">ACTIVATE LICENSE <span>→</span></button>
+  </form>
+  <div id="status" role="status" aria-live="polite"></div>
+  <footer><span class="pulse"></span> SECURE SESSION <span class="by">NEVERCHESS · BUTIZADA</span></footer>
+</main><script src="login.js"></script></body></html>

@@ -1,0 +1,24 @@
+appId: com.butizada.neverchess
+productName: NeverChess by butizada
+directories:
+  output: dist
+  buildResources: public
+files:
+  - src/**/*
+  - public/**/*
+  - package.json
+win:
+  icon: public/icon.png
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+portable:
+  artifactName: NeverChess-Portable-${version}.${ext}
+artifactName: NeverChess-Setup-${version}.${ext}

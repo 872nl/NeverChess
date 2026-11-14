@@ -1,0 +1,23 @@
+{
+  "name": "neverchess-desktop",
+  "productName": "NeverChess by butizada",
+  "version": "1.0.0",
+  "description": "NeverChess desktop shell with KeyAuth authentication and chess analysis panel",
+  "main": "src/main.cjs",
+  "author": "butizada",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable",
+    "dist:installer": "electron-builder --win nsis",
+    "dist:portable": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "allowScripts": {
+    "electron@37.10.3": true,
+    "electron-winstaller@5.4.0": true
+  }
+}
